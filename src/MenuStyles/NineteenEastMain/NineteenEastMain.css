@@ -1,0 +1,63 @@
+.menu-heading{
+    font-family: 'Cardo';
+    font-style: italic;
+    color: #a67c52;
+    border: none;
+    font-size: 27pt;
+    font-weight: normal;
+    word-spacing: 0;
+    margin-left: -1rem;
+}
+
+.food-item-name-heading{
+    font-size: 13pt;
+    font-weight: 600;
+    word-spacing: 0;
+    color: black;
+}
+
+.extras{
+    font-size: 10pt;
+    font-style: italic;
+    font-family: 'Open Sans';
+    word-spacing: 0;
+    color: black;
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.extras span {
+    margin-right: 0.1rem;
+} 
+
+.price{
+    font-weight: normal;
+    font-family: 'Open Sans';
+    font-size: 13pt;
+    word-spacing: 0;
+    color: black;
+    flex-grow: 1;
+    text-align: right;
+    display: flex;
+}
+
+.price::before {
+    content: '';
+    background: repeating-linear-gradient(to right, currentColor, currentColor 1px, transparent 2px, transparent 4px);
+    height: 1px;
+    flex-grow: 1;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.food-item-name-description{
+    font-family: 'Open Sans';
+    font-weight: normal;
+    font-size: 11pt;
+    color: black;
+}
+
+.food-item-name-head {
+    display: flex;
+    justify-content: space-between;
+}

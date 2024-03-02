@@ -1,0 +1,47 @@
+#page-setup{
+    display: flex;
+    justify-content: space-between;
+}
+
+#page-setup-left{
+    margin-bottom: 1rem;
+}
+
+#page-setup-left h5{
+    margin-bottom: 1rem;
+}
+
+#page-setup-right h5{
+    margin-bottom: 1rem;
+}
+
+.orn{
+    display: flex;
+    margin: 0.5rem 0;
+}
+
+.orn input {
+    margin-right: 0.5rem;
+}
+
+.paper-size{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.3rem;
+}
+
+.paper-size label{
+    margin-right: 0.3rem;
+}
+
+.paper-size input{
+    width: 4rem;
+    height: 1.5rem;
+    padding: 0.1rem;
+}
+
+#selectPage{
+    width: 11rem;
+    height: 2rem;
+    padding: 0.5rem;
+}

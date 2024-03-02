@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+
+.cmenu-heading{
+    font-family: "Oswald", sans-serif;
+    border: none;
+    font-size: 18pt;
+    font-weight: bold;
+    word-spacing: 0;
+    margin-left: 0;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 2pt;
+    margin-right: 0;
+}
+
+.cfood-item-name-head{
+    display: flex;
+
+}
+
+.cfood-item-name-heading{
+    font-size: 11pt;
+    font-weight: normal;
+    word-spacing: 0;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+
+.cprice{
+    font-weight: normal;
+    font-family: "Montserrat", sans-serif;
+    font-size: 11pt;
+    word-spacing: 0;
+    padding-right: none;
+    margin-left: 0.5rem;
+}
+
+.cfood-item-name-description{
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: 8pt;
+    font-style: normal;
+    margin-left: 0.5rem;
+}
+
+.cextras{
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: 8pt;
+    font-style: normal;
+}

@@ -1,0 +1,11 @@
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thick-solid-border{
+    border: 2px solid black;
+    padding: 1rem!important;
+}

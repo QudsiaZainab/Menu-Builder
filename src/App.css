@@ -1,38 +1,656 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+    background-color: black;
+    padding: 0.5rem 0 0.5rem 5rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#nav1 {
+    position: sticky;
+    top: 3.2rem;
+    background-color: white;
+    z-index: 100;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#nav-2 {
+    position: sticky;
+    top: 5.34rem;
+    background-color: white;
+    z-index: 100;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+header img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header h3 {
+    margin-right: 3rem;
+}
+
+#sample-menu {
+    margin-right: 0.5rem;
+}
+
+#delete-icon {
+    height: 0.9rem;
+    width: 0.6rem;
+}
+
+#delete-icon-item {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.head-item {
+    font-size: 0.8rem;
+    margin: 0 0.5rem;
+}
+
+#sign-up {
+    margin-left: 3rem;
+    background-color: rgb(253, 138, 32);
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+}
+
+#sign-up:hover {
+    color: white;
+    cursor: pointer;
+    background-color: rgb(63, 63, 252);
+}
+
+nav {
+    padding: 0 0 0 4rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(188, 188, 188);
+}
+
+.dropdown {
+    margin-left: 0.5rem;
+    height: 0.25rem;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    z-index: -1;
+}
+
+.nav-item:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+#nav1-style {
+    text-decoration: none;
+    color: rgb(63, 63, 252);
+    font-size: 0.8rem;
+    margin-left: 3rem;
+}
+
+.nav2-img {
+    width: 1rem;
+}
+
+#zoom-img {
+    width: 3rem;
+}
+
+#zoom-percentage {
+    font-size: 0.4rem;
+}
+
+#main {
+    margin-top: 0.3rem;
+    display: flex;
+}
+
+#items {
+    padding-left: 5rem;
+    width: 23rem;
+    padding-right: 2.5rem;
+    padding-top: 0.5rem;
+}
+
+#items-head {
+    display: flex;
+    align-items: center;
+    width: 15rem;
+}
+
+#new-icon,
+#list-icon {
+    width: 0.6rem;
+    margin-right: 0.1rem;
+}
+
+#new-button {
+    padding: 0 0.2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.2rem;
+}
+
+#list-button {
+    padding: 0 0.2rem;
+    margin-right: 0.2rem;
+    display: flex;
+    align-items: center;
+}
+
+#list-dropdown {
+    width: 0.5rem;
+    margin-left: 0.2rem;
+}
+
+#expand-list {
+    font-size: 0.7rem;
+}
+
+#search-box {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    border: 1px solid rgb(181, 178, 178);
+    border-radius: 1rem;
+    width: 15rem;
+    padding: 0.3rem 0.5rem;
+}
+
+#search-box img {
+    width: 1rem;
+    margin-right: 0.5rem;
+}
+
+#search-box input {
+    border: none;
+}
+
+#search-box input:focus {
+    outline: none;
+}
+
+#food-items {
+    margin-top: 0.5rem;
+    border: 1px solid rgb(181, 178, 178);
+    width: 15rem;
+    height: 15rem;
+    overflow: auto;
+}
+
+.food-item {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgb(181, 178, 178);
+    padding: 0.2rem 0.5rem;
+    font-size: 0.9rem;
+}
+
+.food-item img {
+    margin-right: 0.3rem;
+      width: 0.9rem;
+}
+
+#menu {
+    width: 34.8rem;
+    padding-left: 4.2rem;
+    margin-top: 0.5rem;
+    height: 40rem;
+    z-index: 90;
+    position: relative;
+    padding-top: 3.5rem;
+    height: 50rem;
+    
+}
+
+#bg-style
+{
+    background: url('Backgrounds_Styles/Alaskan_Crab.jpg');
+    background-size: cover;
+    background-position: center; 
+    position: absolute;
+    width: 39.5rem;
+    padding: 1rem;
+    height: 51rem;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    bottom: 2rem;
+    margin-bottom: 3rem;
+}
+.menu-item-name {
+    cursor: pointer;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+    position: relative;
+    z-index: 100;
+    /* width: 30%; */
+}
+
+#headings-head {
+    margin-top: 2rem;
+    display: flex;
+}
+
+#headings-items {
+    margin-top: 0.5rem;
+    border: 1px solid rgb(181, 178, 178);
+    width: 15rem;
+    height: 15rem;
+    overflow: auto;
+}
+
+.close-icon {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    width: 100%;
+    position: absolute;
+    top: -0.5rem;
+    right: 0;
+}
+
+.menu-item-name:hover .close-icon {
+    opacity: 1;
+}
+
+.close-icon img {
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+
+
+
+
+
+#duplicate-heading-msg {
+    background-color: #ff9999;
+    /* Light red background */
+    color: #990000;
+    /* Dark red text */
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    opacity: 0;
+    width: 15rem;
+    top: 6rem;
+    left: 30rem;
+    z-index: 101;
+    transition: opacity 0.3s ease-in-out;
+    position: fixed;
+}
+
+.label-close {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.label-close img {
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+.duplicate-msg p {
+    text-align: center;
+}
+
+
+#new-food-item {
+    border: 1px solid black;
+    width: 40rem;
+    padding: 1rem;
+    position: fixed;
+    z-index: 101;
+    background-color: white;
+    top: 1rem;
+    left: 20rem;
+}
+
+
+
+
+
+
+.dialog-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.new-item-cross {
+    width: 0.8rem;
+    height: 0.8rem;
+    cursor: pointer;
+}
+
+.q-button {
+    background-color: rgb(155, 155, 255);
+    color: white;
+    padding: 0.3rem 1rem;
+    border: none;
+    margin: 0.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.q-button:hover {
+    background-color: rgb(25, 25, 241);
+}
+
+.row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.row textarea {
+    width: 70%;
+    height: 4rem;
+    margin-right: 1rem;
+    padding: 0.5rem;
+}
+
+#price {
+    height: 2rem;
+    padding: 0.5rem;
+}
+
+#description {
+    width: 100%;
+    height: 4rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#extras {
+    width: 100%;
+    padding: 0.3rem;
+}
+
+#new-item-main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+#symbols {
+    width: 10rem;
+}
+
+#box-accent {
+    width: 10rem;
+}
+
+#spacing {
+    width: 10rem;
+}
+
+#symbols-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#symbols-row p{
+    cursor: pointer;
+    font-size: 1rem;
+    color: blue;
+}
+
+.menu-symbol{
+    color: green;
+    font-size: 1.1rem;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+
+.check-input {
+    display: flex;
+    align-items: center;
+}
+
+.check-input input {
+    margin-right: 0.5rem;
+}
+
+#symbols h5 {
+    margin-bottom: 0.5rem;
+}
+
+
+
+
+
+.custom-dropdown {
+    position: relative;
+    width: 200px;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.dropdown-imgs{
+    width: 100%!important;
+    height: 1rem!important;
+}
+
+.selected-option {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.selected-option img {
+    margin-right: 8px;
+    width: 10px;
+    height: 20px;
+}
+
+#custom-dropdown-img{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    display: none;
+    z-index: 100;
+    background-color: white;
+}
+
+.options li {
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.options li:hover {
+    background-color: blue;
+}
+
+.options li img {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+.custom-dropdown:hover .options {
+    display: block;
+}
+
+#color-selector{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+#below-color{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+#bin{
+    margin-right: 0.2rem;
+}
+
+#bin input{
+    width: 5rem;
+}
+
+#n-photo{
+    padding: 1rem 0.5rem;
+    border: 1px solid grey;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    font-size: 0.4rem;
+    align-items: center;
+}
+
+#upload-photo{
+    display: flex;
+    color: grey;
+    font-size: 0.8rem;
+    border: 1px solid grey;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+#upload-photo img{
+    margin-right: 0.3rem;
+    padding: 0.3rem;
+    
+}
+
+#spacing-drpdn{
+    margin-top: 1rem;
+}
+
+#spacing-drpdn label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+#spacing-drpdn label input{
+    margin-right: 0.5rem;
+}
+
+.spacing-labels{
+    margin-bottom: 1rem;
+}
+
+.spacing-labels input{
+    width: 4rem;
+    height: 1.5rem;
+}
+
+#new-food-item-footer{
+    justify-content: space-between;
+    margin-top: 2rem;
+    border-top: 1px solid grey;
+    box-sizing: content-box;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding: 0.5rem 0.5rem 0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+#new-food-item-footer-left{
+    display: flex;
+}
+
+#new-food-item-footer input{
+    margin-right: 0.5rem;
+}
+
+#new-food-item-footer button{
+    margin: 0 0.5rem;
+    color: grey;
+    padding: 0.2rem;
+}
+
+#ok-button{
+    background-color: blue;
+    color: white!important;
+    border: none;
+}
+
+
+
+
+
+#symbols-form{
+    width: 38rem;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 105;
+    padding: 1rem;
+    color: blue;
+    border: 1px solid grey;
+    top: 20rem;
+    background-color: white;
+}
+
+#symbols-form i{
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+#symbols-form i:hover{
+    font-size: 1.05rem;
+}
+
+#bg-style{
+    border: 1px solid rgb(220, 215, 215);
+    box-shadow: 0 0 20px 3px rgba(171, 168, 168, 0.5);
 }

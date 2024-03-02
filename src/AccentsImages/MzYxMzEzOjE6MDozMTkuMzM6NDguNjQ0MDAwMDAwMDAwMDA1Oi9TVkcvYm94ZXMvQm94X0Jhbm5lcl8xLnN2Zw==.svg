@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="432.82px" height="58.82px" viewBox="0 0 432.82 58.82" style="enable-background:new 0 0 432.82 58.82;"
+	 xml:space="preserve">
+<style type="text/css">
+<![CDATA[
+	.st0{fill:#361313; fill-opacity: 1; stroke-opacity: 1;}
+	.st1{fill:#240101; fill-opacity: 1; stroke-opacity: 1;}
+]]>
+</style>
+<g>
+	<g>
+		<polygon class="st1" points="359.501,8.108 359.501,58.32 431.925,58.32 416.442,33.216 431.925,8.108 		"/>
+		<path class="st0" d="M432.82,58.82h-73.819V7.608h73.819l-15.79,25.607L432.82,58.82z M360.001,57.82h71.028l-15.175-24.604
+			l15.175-24.607h-71.028V57.82z"/>
+	</g>
+	
+		<rect x="383.751" y="30.325" transform="matrix(0.1269 0.9919 -0.9919 0.1269 389.8267 -333.31)" class="st0" width="1" height="48.925"/>
+	<g>
+		<polygon class="st1" points="73.321,8.108 73.321,58.32 0.896,58.32 16.381,33.216 0.896,8.108 		"/>
+		<path class="st0" d="M73.821,58.82H0l15.793-25.604L0,7.608h73.821V58.82z M1.792,57.82h71.029V8.608H1.792l15.176,24.607
+			L1.792,57.82z"/>
+	</g>
+	
+		<rect x="24.109" y="54.287" transform="matrix(0.9919 0.1272 -0.1272 0.9919 7.3652 -5.7344)" class="st0" width="48.925" height="1"/>
+	<g>
+		<rect x="24.411" y="0.5" class="st1" width="384" height="50.62"/>
+		<path class="st0" d="M408.911,51.62h-385V0h385V51.62z M24.911,50.62h383V1h-383V50.62z"/>
+	</g>
+</g>
+</svg>

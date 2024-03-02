@@ -1,0 +1,25 @@
+#file-dropdown {
+    background-color: white;
+    color: black;
+    width: 15rem;
+    left: 4rem;
+    position: fixed;
+    z-index: 150;
+    top: 5.3rem;
+    border: 1px solid rgb(216, 214, 214);
+}
+
+.file-dropdown-item {
+    padding: 0.3rem;
+    cursor: default;
+}
+
+.greyed {
+    color: rgb(215, 215, 215);
+}
+
+.not-greyed:hover{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}

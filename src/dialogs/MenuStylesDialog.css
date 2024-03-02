@@ -1,0 +1,108 @@
+.dialog-styles{
+    position: fixed;
+    border: 1px solid grey;
+    top: 6rem;
+    left: 12rem;
+    background-color: white;
+    z-index: 200;
+    width: 20rem;
+    padding: 0.5rem 1rem;
+}
+
+.design-dialog-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.dialog-q-button{
+    background-color: blue;
+    color: white;
+    padding: 0.1rem 0.8rem;
+    font-size: 0.8rem;
+    border-radius: 2rem;
+    border: none;
+    margin-right: 0.3rem;
+}
+
+.dialog-q-button:hover{
+    background-color: rgb(105, 105, 247);
+    cursor: pointer;
+}
+
+.dialog-cross{
+    width: 0.6rem;
+    height: 0.6rem;
+}
+
+.dialog-cross:hover{
+    cursor: pointer;
+}
+
+.design-dialog-main{
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+}
+
+.dialogs-content{
+    margin: 0 1rem;
+}
+
+.dialog-item{
+    margin: 0.2rem 0;
+    cursor: pointer;
+}
+
+.dialog-item:hover{
+    background-color: blue!important;
+    color: white;
+}
+
+.dialogs{
+    border: 1px solid grey;
+    overflow: auto;
+    height: 10rem;
+}
+
+#column{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.7rem;
+    margin-bottom: 0.5rem;
+}
+
+#column select{
+    width: 4rem;
+}
+
+.dialog-styles hr{
+    margin: 0 -1rem 1rem -1rem;
+    border: 1px solid rgb(199, 198, 198);
+}
+
+.dialog-ok{
+    background-color: blue;
+    color: white;
+    padding: 0.1rem 0.5rem;
+    cursor: pointer;
+    border: none;
+    margin-right: 0.5rem;
+}
+
+.dialog-ok:hover{
+    background-color: rgb(99, 99, 255);
+}
+
+.dialog-buttons{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dialog-cancel{
+    background-color: rgb(203, 203, 203);
+    padding: 0.1rem 0.5rem;
+    border: none;
+    cursor: pointer;
+}

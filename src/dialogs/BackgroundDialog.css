@@ -1,0 +1,61 @@
+#background-styles{
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 190;
+    cursor: pointer;
+}
+
+#background-margin{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 1rem 1rem 0.5rem;
+}
+
+#background-margin input{
+    width: 3rem;
+}
+
+#paper-stretch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+}
+
+#stretch-fit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#paper-color{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#stretch-fit input{
+    margin-right: 0.5rem;
+}
+
+#paper-color label{
+    margin-right: 0.5rem;
+}
+
+#fml{
+    display: flex;
+    margin: 1rem 1rem 1rem 0.5rem;
+    align-items: center;
+}
+
+#fml label{
+    margin-right: 1rem;
+}
+
+#fml input{
+    margin-right: 0.3rem;
+}
